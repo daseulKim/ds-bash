@@ -1,0 +1,7 @@
+
+CONF="it is config sample"
+
+function fn_print_conf {
+    echo "[file]: $PHASE" 
+    echo "[file]: $CONF"
+}
