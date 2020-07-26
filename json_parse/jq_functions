@@ -1,0 +1,9 @@
+echo "[jq_functions] target: $TARGET"
+
+function fn_jq_parse_file {
+    jq '.' $TARGET
+}
+
+function fn_jq_parse_curl {
+    curl -s $TARGET | jq '.'
+}
